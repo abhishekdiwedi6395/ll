@@ -1,0 +1,182 @@
+/* Variables */
+:root {
+    --background-color: #007dc6;
+    --active-color: #eeaf1d;
+    --text-color: #ffffff;
+    --btn-width: 120px;
+    --btn-height: 40px;
+    --block-padding: 60px;
+    --white-color: #ffffff;
+    --light-grey: #edebeb;
+    --btn-color: rgb(26, 154, 233);
+    --shadow: -3px -3px 7px #97949473, 2px 2px 7px rgb(137, 138, 138);
+    --table-shadow: -3px -3px 7px #bfbdbd73, 2px 2px 7px rgb(222, 241, 252);
+    --table-bg: rgb(222, 241, 252);
+    --grey-color: #bbbaba;
+    --primary: #007dc6;
+    --light: #e9e7e7;
+  }
+ /* Mixins */
+/* Vertical List */
+.vertical-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Main */
+  .main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    letter-spacing: 2px;
+  }
+  
+  /* Item Position */
+  .itemPosition {
+    display: flex;
+  }
+  
+  /* Usage */
+  body {
+    /* Main */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    letter-spacing: 2px;
+    
+    /* Background Color */
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  
+  .button {
+    width: var(--btn-width);
+    height: var(--btn-height);
+    background-color: var(--btn-color);
+  }
+  
+  .card {
+    box-shadow: var(--shadow);
+  }
+  
+  .table {
+    box-shadow: var(--table-shadow);
+    background-color: var(--table-bg);
+  }
+  
+  /* Additional CSS from login page */
+  .authScreen {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    position: relative;
+  }
+  
+  .container_div .row {
+    text-align: center;
+    display: flex;
+    width: auto;
+    justify-content: center;
+  }
+  
+  .container_div .Left_content hr {
+    color: var(--text-color);
+    height: 2px;
+  }
+  
+  .container_div .Left_content p {
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .container_div .authCard {
+    max-width: 350px;
+    margin: auto;
+    border: 1px dotted grey;
+    border-radius: 15px;
+    z-index: 2;
+  }
+  
+  .container_div .authCard form {
+    margin: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .container_div .authCard form h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .container_div .authCard form .inputField {
+    margin: 18px 0;
+  }
+  
+  .container_div .authCard form .inputField input {
+    width: 100%;
+    background-color: rgba(var(--color= var(--background-color)), var(--alpha= 0.1));
+  }
+  
+  .container_div .authCard form .inputField input:focus {
+    box-shadow: none;
+  }
+  
+  .container_div .authCard form a {
+    text-decoration: none;
+    color: var(--background-color);
+  }
+  
+  .container_div .authCard .Left_content {
+    height: 80px;
+    background-color: var(--background-color);
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .container_div .authCard .Left_content img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+  }
+  
+  .container_div .authCard .Left_content p {
+    padding: 15px;
+  }
+  
+  .gps {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 160px;
+    transform: translate(-50%);
+    z-index: 1;
+  }
+  
+  .middle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: auto;
+    transform: translatex(-50%);
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .secondRowContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+  
